@@ -100,7 +100,7 @@ PROMPT
   [[ -z "$*" ]] && { echo "用法: shpi [-n|-r] <描述>"; return 0; }
 
   local PI_SESSION="/tmp/.pi-shpi-session"
-  local args=(-p --system-prompt "$PI_PROMPT" --session "$PI_SESSION")
+  local args=(-p --model deepseek/deepseek-v4-flash:medium  --system-prompt "$PI_PROMPT" --session "$PI_SESSION")
   [[ -f "$PI_SESSION" ]] && args+=(--continue)
 
   local raw cmd

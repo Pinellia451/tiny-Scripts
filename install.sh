@@ -10,7 +10,7 @@ set -e
 
 # 获取脚本所在目录
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
-REPO_URL="${REPO_URL:-https://raw.githubusercontent.com/user/tiny-scripts/main}"
+REPO_URL="${REPO_URL:-https://raw.githubusercontent.com/Pinellia451/tiny-Scripts/main}"
 INSTALL_DIR="$HOME/.local/share/tiny-scripts"
 SCRIPTS=(shpi)
 
